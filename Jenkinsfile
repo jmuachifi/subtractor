@@ -1,8 +1,7 @@
 pipeline {
     agent {
         docker {
-            label 'docker'
-            image 'python:3'
+            image 'python:latest'
         }
     }
 
@@ -15,7 +14,7 @@ pipeline {
 
         stage('Run') {
             steps {
-                sh 'python3 adder.py 3 5'
+                sh 'python3 subtractor.py 13 5'
             }
         }
 
