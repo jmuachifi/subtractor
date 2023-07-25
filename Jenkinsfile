@@ -14,7 +14,7 @@ pipeline {
 
         stage('Run') {
             steps {
-                sh 'python3 subtractor.py 13 5'
+                sh 'python3 subtractor.py 20 5'
             }
         }
 
